@@ -3,16 +3,17 @@
   <head>
   <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-   <script src="jquery-1.7.1.min.js"></script>
-  <script src="jquery-ui.js"></script>
-  <script src="jquery.mobile-1.1.0.min.js"></script>
- <script type="text/javascript" src="slimbox2.js"></script> 
+  	
+ 
   <link rel="stylesheet" href="jquery.mobile-1.1.0.min.css" />
   <link rel="stylesheet" href="jquery-ui.css" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="slimbox2.css" />
-  
+  <link rel="stylesheet" href="lightbox.css" />
+  <script src="jquery-1.9.1.js"></script>
+    <script src="jquery-1.7.1.min.js"></script>
+  <script src="jquery-ui.js"></script>
+  <script src="jquery.mobile-1.1.0.min.js"></script>
+ <script src="lightbox.js"></script> 
   
  
   <script>
@@ -130,7 +131,9 @@ $(document).on('swiperight', 'article', function(event){
         <!--     <div id="an-obj-2" class="gallery clearfix"> 
 <a href="1-07.png" rel="prettyPhoto"><img src="whatisimg.png" width="195" height="193"/></a>        
         </div> -->
-        <p><a rel="lightbox" title=" " href="1-07.png"><img src="whatisimg.png" alt=" " /></a></p>
+      <div class="single"> <a rel="lightbox" href="1-07.png">
+              <div> <img src="whatisimg.png"  class="centerimg"></div>       </a> 
+       </div>
         <!--    <a href="1-07.png" rel="prettyPhoto"><img src="whatisimg.png" width="195" height="193" class="centerimg"/></a> 
        <p> <img src="whatisimg.png" width="195" height="193" class="centerimg"/> </p>--> 
       </div>
