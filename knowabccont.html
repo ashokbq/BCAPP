@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
   <title></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <script src="jquery-1.7.1.min.js"></script>
   <link rel="stylesheet" href="jquery.mobile-1.1.0.min.css" />
   <link rel="stylesheet" href="jquery-ui.css" />
   <link rel="stylesheet" href="style.css" />
@@ -11,10 +12,11 @@
   <link rel="stylesheet" type="text/css" href="result-light.css">
   
   <!--  <script src="jquery-1.9.1.js"></script>-->
-  <script src="jquery-1.7.1.min.js"></script>
+
   <script src="jquery-ui.js"></script>
   <script src="jquery.mobile-1.1.0.min.js"></script>
   <script type='text/javascript' src="jquery.fancybox.pack.js"></script>
+ 
   <script>
  $(window).load(function(){
 $(document).ready(function() {
@@ -138,7 +140,7 @@ $(document).on('swiperight', 'article', function(event){
         without control, leading to 
         formation of a tumor.</p>
         <br/>
-     <a class="fancybox" rel="gallery1" href="1-07.png">
+     <a class="fancybox" rel="gallery1" href="1-07.png" title="test" data-ajax="false" >
     <img src="whatisimg.png" alt="" class="centerimg"/>
 </a>
         <!--  <div class="single"> <a rel="lightbox" href="1-07.png">
