@@ -11,16 +11,21 @@ html, body {
 	text-align: left;
 	text-shadow:none;
 }
-.ui-body-c, .ui-overlay-c {
+.ui-body-c, .ui-overlay-c,.ui-overlay-a {
 	color: #000;
+	    text-shadow: none !important;
 }
+.ui-overlay-a {
+	    text-shadow: none !important;
+}
+
 .clear {
 	clear: both;
 	display: block;
 	height: 0;
 	visibility: hidden;
 }
-.ui-body-c, .ui-overlay-c {
+.ui-body-c, .ui-overlay-c,.ui-overlay-a {
 	background-image:-webkit-gradient(linear, left top, left bottom, from(#FFF), to(#FFF)) !important;
 	background-image:-webkit-linear-gradient(#FFF, #FFF) !important;
 	background-image:-moz-linear-gradient(#FFF, #FFF) !important;
@@ -161,7 +166,7 @@ em {
 }
 #btmheader .ui-btn {
 	float: right;
-	width: 100px;
+	width: 105px;
 }
 #donebtn {
 	background-color: transparent !important;
@@ -170,6 +175,8 @@ em {
 	height:42px;
 	width:104px;
 	opacity: 1;
+    border-radius: 0 0 0 0 !important;
+	    border: medium none !important;
 }
 #topmenu .ui-btn {
 	float: left;
@@ -336,16 +343,16 @@ p.treatheader {
 }
 #leftnav {
 	background-color: transparent !important;
-	background-image:url(leftarrow.png);
-	background-repeat:no-repeat;
+/*	background-image:url(leftarrow.png);
+	background-repeat:no-repeat; */
 	height:34px;
 	width:37px;
 	opacity:1;
 }
 #rightnav {
 	background-color: transparent !important;
-	background-image:url(rightarrow.png);
-	background-repeat:no-repeat;
+/*	background-image:url(rightarrow.png);
+	background-repeat:no-repeat; */
 	height:34px;
 	width:37px;
 	opacity:1;
@@ -536,12 +543,12 @@ img.centered {
 #locatecenter {
 }
 #locatecenter .ui-select .ui-btn-hover-c, #locatecenter .ui-select .ui-btn-up-c {
-	background-image:-webkit-gradient(linear, left top, left bottom, from(#f393bd), to(#f393bd)) !important;
-	background-image:-webkit-linear-gradient(#f393bd, #f393bd) !important;
-	background-image:-moz-linear-gradient(#f393bd, #f393bd) !important;
-	background-image:-ms-linear-gradient(#f393bd, #f393bd) !important;
-	background-image:-o-linear-gradient(#f393bd, #f393bd) !important;
-	background-image:linear-gradient(#f393bd, #f393bd) !important;
+	background-image:-webkit-gradient(linear, left top, left bottom, from(#F831A3), to(#F831A3)) !important;
+	background-image:-webkit-linear-gradient(#F831A3, #F831A3) !important;
+	background-image:-moz-linear-gradient(#F831A3, #F831A3) !important;
+	background-image:-ms-linear-gradient(#F831A3, #F831A3) !important;
+	background-image:-o-linear-gradient(#F831A3, #F831A3) !important;
+	background-image:linear-gradient(#F831A3, #F831A3) !important;
 	Color:#fff !important;
 }
 #locatecenter .ui-select .ui-icon, #locatecenter .ui-select .ui-widget-content .ui-icon {
@@ -556,6 +563,7 @@ img.centered {
 #searchwell {
 	width:90%;
 	padding-bottom:10px;
+  padding-left: 1%;
 }
 .unselected {
 	/*	background-color: #ECECED; */
