@@ -566,12 +566,13 @@ img.centered {
   padding-left: 1%;
 }
 .unselected {
-	/*	background-color: #ECECED; */
+	/*	background-color: #ECECED; 
+	margin-bottom: 40px;*/
 	 color: #333333;
 	float: left;
 	height: 100px;
 	line-height: 1;
-	margin-bottom: 40px;
+	
 	margin-right: 10px;
 	padding-bottom: 5px;
 	text-align: left;
@@ -803,7 +804,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb008b', end
 	padding:0;
 	position:relative;
 	right:50%;
-	margin: 0 1px 0 0;
+	margin:9px 1px 0 0;/* 0 1px 0 0;*/
 }
 .centeredmenu ul li a {
 	display:block;
