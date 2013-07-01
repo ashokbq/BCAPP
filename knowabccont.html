@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" type="text/css" href="jquery.fancybox.css">
 
-  <link rel="stylesheet" type="text/css" href="result-light.css">
   
   <!--  <script src="jquery-1.9.1.js"></script>-->
   <script src="jquery-1.7.1.min.js"></script>
@@ -19,9 +18,11 @@
  
   <script>
  $(window).load(function(){
+	 	
 $(document).ready(function() {
     // initialize the lightbox 
     $('.fancybox').fancybox({
+		arrows:false,
         beforeLoad: function() {
             var windowsize = $(window).width();
             // test the viewport size to see if it's smaller than 480px
