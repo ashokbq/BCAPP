@@ -3,35 +3,39 @@
   <head>
   <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1" >
-  
   <link rel="stylesheet" href="jquery.mobile-1.1.0.min.css" />
   <link rel="stylesheet" href="jquery-ui.css" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" type="text/css" href="jquery.fancybox.css">
-
-  
+<!--  <link rel="stylesheet" type="text/css" href="jquery.fancybox.css">-->
+	<link rel="stylesheet" type="text/css" href="jquery.fancybox.css" media="screen" />
   <!--  <script src="jquery-1.9.1.js"></script>-->
   <script src="jquery-1.7.1.min.js"></script>
   <script src="jquery-ui.js"></script>
-   <script src="jquery.mobile-1.3.1.min.js"></script>
-  <script type='text/javascript' src="jquery.fancybox.pack.js"></script>
- 
+  <script src="jquery.mobile-1.3.1.min.js"></script>
+<!--  <script type='text/javascript' src="jquery.fancybox.pack.js"></script>-->
+<script type="text/javascript" src="jquery.fancybox.js"></script>
   <script>
- $(window).load(function(){
-	 	
+  var $ = jQuery.noConflict();
+ $(window).load(function(){ 	
 $(document).ready(function() {
     // initialize the lightbox 
-    $('.fancybox').fancybox({
-		arrows:false,
-        beforeLoad: function() {
-            var windowsize = $(window).width();
-            // test the viewport size to see if it's smaller than 480px
-            if (windowsize < 480) {
-                // cancel the lightbox and load the link url
-                $.fancybox.cancel();
-            }
-        }
-    });
+    $(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 300,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 300,
+
+				closeClick : true,
+				
+				arrows :false,
+				
+				helpers : {
+					overlay : null
+				}
+			});
 });
 });//]]>  
   $(function(){
@@ -141,9 +145,7 @@ $(document).on('swiperight', 'article', function(event){
         without control, leading to 
         formation of a tumor.</p>
         <br/>
-     <a class="fancybox" rel="gallery1" href="1-07.png" title=" " data-ajax="false" >
-    <img src="whatisimg.png" alt="" class="centerimg"/>
-</a>
+        <a class="fancybox-effects-d" rel="fancybox-button" href="1-07.png" title=" " data-ajax="false" > <img src="whatisimg.png" alt="" class="centerimg"/> </a> 
         <!--  <div class="single"> <a rel="lightbox" href="1-07.png">
           <div> <img src="whatisimg.png"  class="centerimg"></div>
           </a> </div>
@@ -193,10 +195,8 @@ $(document).on('swiperight', 'article', function(event){
         <p>By 2020, breast cancer cases are expected
         to increase by 26%. Most of these cases will
         be seen in developing countries.</p>
-     <p>     <a class="fancybox" rel="gallery1" href="1-08.png" title=" " data-ajax="false" >
-   <img src="statisticsimg.png" width="294" height="220" class="centerimg"/>
-</a> </p>
-
+        <p> <a  class="fancybox-effects-d" rel="fancybox-button" href="1-08.png" title=" " data-ajax="false" > <img src="statisticsimg.png" width="294" height="220" class="centerimg"/> </a> </p>
+        
         <!-- <p> <img src="statisticsimg.png" width="294" height="187" class="centerimg"/> </p>--> 
       </div>
     <div class="clear"> </div>
@@ -241,10 +241,7 @@ $(document).on('swiperight', 'article', function(event){
         breast cancer patients are diagnosed
         annually in India.</p>
         <br/>
-     <p>     <a class="fancybox" rel="gallery1" href="1-09.png" title=" " data-ajax="false" >
-    <img src="statindia.png" alt="" class="centerimg"/>
-</a>
-       </p>
+        <p> <a  class="fancybox-effects-d" rel="fancybox-button" href="1-09.png" title=" " data-ajax="false" > <img src="statindia.png" alt="" class="centerimg"/> </a> </p>
         <br/>
         <p> The incidence of this disease has been 
         consistently increasing at a rate of 0.5-2% every year. </p>
@@ -291,19 +288,11 @@ $(document).on('swiperight', 'article', function(event){
         <div class="clear"> </div>
         <p>The presence of a lump or mass in or
         near the breast</p>
-         <p>     <a class="fancybox" rel="gallery1" href="1-10.png" title=" " data-ajax="false" >
-  <img src="singsimg.png" class="centerimg"/>
-</a>
-       </p>   
-      
+        <p> <a  class="fancybox-effects-d" rel="fancybox-button" href="1-10.png" title=" " data-ajax="false" > <img src="singsimg.png" class="centerimg"/> </a> </p>
         <div class="clear"> </div>
         <p>Swelling of the breast, or a lump or
         swelling under the arm</p>
-     <p>     <a class="fancybox" rel="gallery1" href="1-12.png" title=" " data-ajax="false" >
-  <img src="singsimg1.png" class="centerimg"/>
-</a>
-       </p>        
-       
+        <p> <a  class="fancybox-effects-d" rel="fancybox-button" href="1-12.png" title=" " data-ajax="false" > <img src="singsimg1.png" class="centerimg"/> </a> </p>
       </div>
     <div class="clear"> </div>
     <div class="bottomnav">
@@ -341,19 +330,11 @@ $(document).on('swiperight', 'article', function(event){
         <div class="clear"> </div>
         <p>Irritation or dimpling of skin in the
         breast region.</p>
-  <p>     <a class="fancybox" rel="gallery1" href="1-11.png" title=" " data-ajax="false" >
-  <img src="singsimg2.png" class="centerimg"/>
-</a>
-       </p>          
-      
+        <p> <a  class="fancybox-effects-d" rel="fancybox-button" href="1-11.png" title=" " data-ajax="false" > <img src="singsimg2.png" class="centerimg"/> </a> </p>
         <div class="clear"> </div>
         <p>Redness, scaliness, or thickening of 
         the nipple or breast skin.</p>
- <p>     <a class="fancybox" rel="gallery1" href="1-15.png" title=" " data-ajax="false" >
-  <img src="singsimg3.png" class="centerimg"/>
-</a>
-       </p>         
-       
+        <p> <a  class="fancybox-effects-d" rel="fancybox-button" href="1-15.png" title=" " data-ajax="false" > <img src="singsimg3.png" class="centerimg"/> </a> </p>
         <div class="clear"> </div>
       </div>
     <div class="clear"> </div>
@@ -390,25 +371,13 @@ $(document).on('swiperight', 'article', function(event){
     <div id="main-content">
         <p class="titletext">Signs and Symptoms</p>
         <p>Breast or nipple pain</p>
- <p>     <a class="fancybox" rel="gallery1" href="1-13.png" title=" " data-ajax="false" >
-  <img src="singsimg4.png" class="centerimg"/>
-</a>
-       </p>           
-    
+        <p> <a  class="fancybox-effects-d" rel="fancybox-button" href="1-13.png" title=" " data-ajax="false" > <img src="singsimg4.png" class="centerimg"/> </a> </p>
         <div class="clear"> </div>
         <p>Nipple retraction (turning inward)</p>
-        <p>     <a class="fancybox" rel="gallery1" href="1-14.png" title=" " data-ajax="false" >
-  <img src="singsimg5.png" class="centerimg"/>
-</a>
-       </p>  
-
+        <p> <a  class="fancybox-effects-d" rel="fancybox-button" href="1-14.png" title=" " data-ajax="false" > <img src="singsimg5.png" class="centerimg"/> </a> </p>
         <div class="clear"> </div>
         <p>Nipple discharge</p>
-           <p>     <a class="fancybox" rel="gallery1" href="1-16.png" title=" " data-ajax="false" >
-  <img src="singsimg6.png" class="centerimg"/>
-</a>
-       </p>  
-        
+        <p> <a  class="fancybox-effects-d" rel="fancybox-button" href="1-16.png" title=" " data-ajax="false" > <img src="singsimg6.png" class="centerimg"/> </a> </p>
       </div>
     <div class="clear"> </div>
     <div class="bottomnav">
@@ -456,21 +425,13 @@ $(document).on('swiperight', 'article', function(event){
             the whole breast that has 
             cancer </p>
           </li>
-<p>     <a class="fancybox" rel="gallery1" href="1-06.png" title=" " data-ajax="false" >
-  <img src="type1.png" class="centerimg"/>
-</a>
-       </p>            
-        
+        <p> <a  class="fancybox-effects-d" rel="fancybox-button" href="1-06.png" title=" " data-ajax="false" > <img src="type1.png" class="centerimg"/> </a> </p>
         <li>
             <p>it may involve removal of the 
             cancer, but not the  breast
             itself (breast-conserving surgery). </p>
           </li>
-          <p>     <a class="fancybox" rel="gallery1" href="1-05.png" title=" " data-ajax="false" >
-  <img src="type2.png" class="centerimg"/>
-</a>
-       </p>    
-     
+        <p> <a  class="fancybox-effects-d" rel="fancybox-button" href="1-05.png" title=" " data-ajax="false" > <img src="type2.png" class="centerimg"/> </a> </p>
       </ul>
         <div class="clear"> </div>
         <div class="bottomnav">
@@ -513,11 +474,7 @@ $(document).on('swiperight', 'article', function(event){
         other types of radiation are used to kill 
         cancer cells or prevent them from
         growing further.</p>
-  <p>     <a class="fancybox" rel="gallery1" href="radiation.png" title=" " data-ajax="false" >
-  <img src="radiationtherapy.png" class="centerimg"/>
-</a>
-       </p>         
-      
+        <p> <a  class="fancybox-effects-d" rel="fancybox-button" href="radiation.png" title=" " data-ajax="false" > <img src="radiationtherapy.png" class="centerimg" width="80%"/> </a> </p>
       </div>
     <div class="clear"> </div>
     <div class="bottomnav">

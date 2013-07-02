@@ -876,13 +876,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFF', endCol
 	top: 56% !important;
 }
 .riskcalculation #main-content .calbtn .ui-btn {
-	background-image:-webkit-gradient(linear, left top, left bottom, from(#F831A3), to(#EB008B)) !important;
-	background-image:-webkit-linear-gradient(#F831A3, #EB008B) !important;
-	background-image:-moz-linear-gradient(#F831A3, #EB008B) !important;
-	background-image:-ms-linear-gradient(#F831A3, #EB008B) !important;
-	background-image:-o-linear-gradient(#F831A3, #EB008B) !important;
-	background-image:linear-gradient(#F831A3, #EB008B) !important;
-
+	background: #808285 !important; /* Old browsers */
+background: -moz-linear-gradient(top, #808285 1%, #414042 100%) !important; /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#808285), color-stop(100%,#414042)) !important; /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #808285 1%,#414042 100%) !important; /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #808285 1%,#414042 100%) !important; /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #808285 1%,#414042 100%) !important; /* IE10+ */
+background: linear-gradient(to bottom, #808285 1%,#414042 100%) !important; /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808285', endColorstr='#414042',GradientType=0 ) !important; /* IE6-9 */
+	border: 2px solid #414142 !important;
+	border-radius: 5px !important;
 	color:#FFF !important;
 	font-weight:normal;
 	width:auto !important;
@@ -892,9 +895,65 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFF', endCol
 	padding: 0.5em 19px !important;
 	white-space: normal !important;
 	width: auto !important;
+	margin: 5.5em 1em !important; 
 }
 
 .riskcalculation #main-content .ui-select .ui-btn-inner
 {
 	    padding: 0.6em 45px  !important;
+}
+
+/* popup image */
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+background: url("x-close.png") !important;
+border: none !important;
+}
+
+.ui-button-text-only .ui-button-text {
+color: #FFF;
+}
+
+.ui-dialog .ui-dialog-buttonpane button {
+background:#eb008b !important; /* Old browsers */
+	background:-moz-linear-gradient(top, #eb008b 0%, #9c005d 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eb008b), color-stop(100%, #9c005d)) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #eb008b 0%, #9c005d 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #eb008b 0%, #9c005d 100%) !important; /* Opera 11.10+ */
+	background:-ms-linear-gradient(top, #eb008b 0%, #9c005d 100%) !important; /* IE10+ */
+	background: linear-gradient(to bottom, #eb008b 0%, #9c005d 100%) !important; /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb008b', endColorstr='#9c005d', GradientType=0 ) !important; /* IE6-9 */
+color: #FFFFFF !important;
+}
+
+.ui-widget-header {
+border: none;
+background: url("headerbgstrip.png") !important;
+color: #222222;
+font-weight: bold;
+border-radius: 0 !important;
+padding-left: 0px !important;
+padding-right: 0px !important;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+border-width: 0 !important;
+background-image: none !important;
+margin-top: 0 !important;
+padding: 0 !important;
+}
+
+.ui-widget-content {
+color: #000 !important;
+text-align: center;
+border: none !important;
+background: #ECECED !important;
+}
+
+.ui-button-text-only .ui-button-text {
+padding: .34em .6em !important;
+}
+
+.ui-widget {
+font-family: 'Conv_ufonts.com_whitney-light_1_' !important;
 }
