@@ -17,7 +17,7 @@
 $(function(){
 $('#donebtn').live("click",function()
 {
-	  window.location = 'index.html'
+	  window.location = 'index_home.html'
 });
 });
 
@@ -40,8 +40,7 @@ $('#donebtn').live("click",function()
       </div>
     </div>
     <div class="clear"> </div>
-  
-  <select id="queryInput" onChange="doSearch()" >
+    <select id="queryInput" onChange="doSearch()" >
       <option value="Bangalore" selected="selected">Bangalore</option>
       <option value="Kolkata">Kolkata</option>
       <option value="Jaipur">Jaipur</option>
@@ -52,12 +51,26 @@ $('#donebtn').live("click",function()
       <option value="Chandigarh">Chandigarh</option>
       <option value="Kerala">Cochin</option>
       <option value="Noida">Noida</option>
+      <option value="Lucknow">Lucknow</option>
+      <option value="Ahmedabad">Ahmedabad</option>
+      <option value="Ghaziabad">Ghaziabad</option>
+      <option value="Faridabad">Faridabad</option>
+      <option value="Gurgaon">Gurgaon</option>
+      <option value="Bhopal">Bhopal</option>
+      <option value="Guwahati">Guwahati</option>
+      <option value="Bhubaneswar">Bhubaneswar/Cuttack </option>
+      <option value="Pune">Pune</option>
+      <option value="Nagpur">Nagpur</option>
+      <option value="Patna">Patna</option>
+      <option value="Ludhiana">Ludhiana</option>
+      <option value="Jammu">Jammu</option>
+      <option value="Goa">Goa</option>
+      <option value="Mangalore">Mangalore</option>
     </select>
     <div id="map" style="height:500px; width:90%; border: 1px solid #979797; margin:10px;"></div>
     <div id="searchwell"> </div>
-</div>
   </div>
-
+</div>
 <footer id="footer"> </footer>
 </div>
 </body>
@@ -263,8 +276,173 @@ $('#donebtn').live("click",function()
 				});
 						}
 						
+							else if(val =='Ahmedabad')
+						{
+							lat=23.03000;
+							lon=72.58000;
+					//	alert('jaipur');
+						gMap = new google.maps.Map(document.getElementById("map"), {					
+					center: new google.maps.LatLng(lat, lon),
+					zoom:12,
+					mapTypeId: 'roadmap'
+				});
+						}
+							else if(val =='Ghaziabad')
+						{
+							lat=28.66916;
+							lon=77.45376;
+					//	alert('jaipur');
+						gMap = new google.maps.Map(document.getElementById("map"), {					
+					center: new google.maps.LatLng(lat, lon),
+					zoom:12,
+					mapTypeId: 'roadmap'
+				});
+						}
+							else if(val =='Faridabad')
+						{
+							lat=28.68150;
+							lon=76.62539;
+					//	alert('jaipur');
+						gMap = new google.maps.Map(document.getElementById("map"), {					
+					center: new google.maps.LatLng(lat, lon),
+					zoom:12,
+					mapTypeId: 'roadmap'
+				});
+						}
+							else if(val =='Gurgaon')
+						{
+							lat=28.45950;
+							lon=77.02664;
+					//	alert('jaipur');
+						gMap = new google.maps.Map(document.getElementById("map"), {					
+					center: new google.maps.LatLng(lat, lon),
+					zoom:12,
+					mapTypeId: 'roadmap'
+				});
+						}
+							else if(val =='Bhopal')
+						{
+							lat=23.25993;
+							lon=77.41262;
+					//	alert('jaipur');
+						gMap = new google.maps.Map(document.getElementById("map"), {					
+					center: new google.maps.LatLng(lat, lon),
+					zoom:12,
+					mapTypeId: 'roadmap'
+				});
+						}
+							else if(val =='Guwahati')
+						{
+							lat=26.14713;
+							lon=91.73555;
+					//	alert('jaipur');
+						gMap = new google.maps.Map(document.getElementById("map"), {					
+					center: new google.maps.LatLng(lat, lon),
+					zoom:12,
+					mapTypeId: 'roadmap'
+				});
+						}
+							else if(val =='Pune')
+						{
+							lat=18.52043;
+							lon=73.85674;
+					//	alert('jaipur');
+						gMap = new google.maps.Map(document.getElementById("map"), {					
+					center: new google.maps.LatLng(lat, lon),
+					zoom:12,
+					mapTypeId: 'roadmap'
+				});
+						}
+							else if(val =='Nagpur')
+						{
+							lat=21.14580;
+							lon=79.08815;
+					//	alert('jaipur');
+						gMap = new google.maps.Map(document.getElementById("map"), {					
+					center: new google.maps.LatLng(lat, lon),
+					zoom:12,
+					mapTypeId: 'roadmap'
+				});
+						}
+							else if(val =='Patna')
+						{
+							lat=25.61046;
+							lon=85.14167;
+					//	alert('jaipur');
+						gMap = new google.maps.Map(document.getElementById("map"), {					
+					center: new google.maps.LatLng(lat, lon),
+					zoom:12,
+					mapTypeId: 'roadmap'
+				});
+						}
+							else if(val =='Ludhiana')
+						{
+							lat=30.90096;
+							lon=75.85728;
+					//	alert('jaipur');
+						gMap = new google.maps.Map(document.getElementById("map"), {					
+					center: new google.maps.LatLng(lat, lon),
+					zoom:12,
+					mapTypeId: 'roadmap'
+				});
+						}
+							else if(val =='Jammu')
+						{
+							lat=32.72660;
+							lon=74.85703;
+					//	alert('jaipur');
+						gMap = new google.maps.Map(document.getElementById("map"), {					
+					center: new google.maps.LatLng(lat, lon),
+					zoom:12,
+					mapTypeId: 'roadmap'
+				});
+						}
+							else if(val =='Goa')
+						{
+							lat=15.29933;
+							lon=74.12400;
+					//	alert('jaipur');
+						gMap = new google.maps.Map(document.getElementById("map"), {					
+					center: new google.maps.LatLng(lat, lon),
+					zoom:12,
+					mapTypeId: 'roadmap'
+				});
+						}
+							else if(val =='Mangalore')
+						{
+							lat=12.91414;
+							lon=74.85596;
+					//	alert('jaipur');
+						gMap = new google.maps.Map(document.getElementById("map"), {					
+					center: new google.maps.LatLng(lat, lon),
+					zoom:12,
+					mapTypeId: 'roadmap'
+				});
+						}
+							else if(val =='Lucknow')
+						{
+							lat=26.8465108;
+							lon=80.9466832;
+					//	alert('jaipur');
+						gMap = new google.maps.Map(document.getElementById("map"), {					
+					center: new google.maps.LatLng(lat, lon),
+					zoom:12,
+					mapTypeId: 'roadmap'
+				});
+						}
+							else if(val =='Bhubaneswar')
+						{
+							lat=20.29606;
+							lon=85.82454;
+					//	alert('jaipur');
+						gMap = new google.maps.Map(document.getElementById("map"), {					
+					center: new google.maps.LatLng(lat, lon),
+					zoom:12,
+					mapTypeId: 'roadmap'
+				});
+						}
      // var query = "Mammography,"+document.getElementById("queryInput").value;
-	  var query = "mammography";
+	  var query = "mammography,India";
       gLocalSearch.setCenterPoint(val);
       gLocalSearch.execute(query);
 	  			//	alert(gLocalSearch.length);
