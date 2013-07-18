@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="jquery.mobile-1.1.0.min.css" />
+  <link rel="stylesheet" href="jquery-ui.css" />
+  <link rel="stylesheet" href="style.css" />
+<script src="jquery-1.9.1.js"></script>
+<script src="jquery-ui.js"></script>
+<script src="jquery.mobile-1.3.1.min.js"></script>
+  <script>
+$(function(){
+$('#donebtn').click(function()
+{
+	  window.location = 'index_home.html'
+});
+});
+$(document).ready(function() {
+var remmonth,remdate;
+$(function() {
+
+      $( "#datepicker" ).datepicker({
+	onSelect: function(dateText, inst) {
+      /* alert("Selected: " + dateText +
+      "\n\nid: " + inst.id +
+      "\nselectedDay: " + inst.selectedDay +
+      "\nselectedMonth: " + inst.selectedMonth +
+      "\nselectedYear: " + inst.selectedYear);*/
+	  	remdate=inst.selectedDay;
+	    remmonth=inst.selectedMonth+1;
+	  //	alert(remmonth);
+	//	alert(remdate);
+	 localStorage.setItem('remddate', remdate);
+	localStorage.setItem('remmonth',remmonth);	
+	   },
+	   showButtonPanel: true,
+	    minDate: 0
+	  });
+
+ });  
+ 
+$('#setrem').click(function(){
+ alert("Reminder Date saved succesfully");
+});
+});
+
+  // to reset
+  // localStorage.clear();*/
+
+  </script>
+  </head>
+  <body>
+  <div id="reminder" data-role="page">
+    <div data-role="content">
+      <div id="header">
+        <div id="titleheader"> 
+          <!-- <div id="headertext"> </div>-->
+          <table id="wrapper">
+            <tr>
+              <td><!--<img src="remindertext.png" />--> Reminder</td>
+            </tr>
+          </table>
+        </div>
+        <div class="clear"> </div>
+        <div id="btmheader">
+          <button id="donebtn"> </button>
+        </div>
+      </div>
+      <div id="main-content">
+       <!-- <form id="reminderform" method="post" action="">
+          <div data-role="fieldcontain">
+            <label for="calendar">Set Reminder</label>
+            <input type="text" id="calendar" name="calendar">
+          </div>
+          <input type="button" value="Set reminder" id="setreminder"/>
+        </form>-->
+     <p>Select Date: <input type="text" id="datepicker" /></p> 
+     <!--  <button id="setrem">Save Reminder </button>-->
+<div class="ui-block-a"><a href="#" data-role="button" rel="external" id="setrem">Save Reminder</a></div>       
+       <p id="datenow"> </p>
+        <p id="monthnow"> </p>
+      </div>
+    </div>
+<div class="clear"> </div>
+ <div class="bottomnav">
+        <div class="btnnav">
+          <div id="leftbtn">
+          
+          </div>
+          <div id="rightlogo"> </div>
+        </div>
+      </div>
+    </div>    
+   <div class="clear"> </div>
+  <footer id="footer"> </footer>
+  </div>
+</body>
+</html>
