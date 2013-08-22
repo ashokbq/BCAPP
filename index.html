@@ -70,8 +70,8 @@ if(result==true)
 				var email=document.getElementById('emailid').value;
 				var phno=document.getElementById('phnumber').value;
 			//alert(email+phno);
-	  $.post("http://www.mobiletest.bqhost.in/sendnewsletter.php",{data:{email:email,phno:phno}}).done(function(data){
-				
+	  $.post("http://www.mobiletest.mednl.com/sendnewsletter.php",{data:{email:email,phno:phno}}).done(function(data){
+			alert(data);
 				   });
 			  alert("You Have subscribed successfully");
 			window.location='index_home.html';
