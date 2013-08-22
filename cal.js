@@ -1,6 +1,6 @@
 // JScript File
 
-servlet = "http://www.mobiletest.mednl.com/assessment.php";
+servlet = "http://www.mobiletest.bqhost.in/assessment.php";
 _error_msg_history = "This tool cannot calculate breast cancer risk accurately for women with a medical history of any breast cancer or of DCIS or LCIS.";
 _error_msg_current_age = "This tool only calculates risk for women 35 years of age or older.";
 _error_msg_hist_age = "This tool cannot calculate breast cancer risk accurately for women with a medical history of breast cancer or of DCIS or LCIS. In addition, the tool only calculates risk for women 35 years of age or older.";
@@ -345,7 +345,7 @@ function calculate() {
   if(window.Analytics_CalculateRiskConversionEvent)
     window.Analytics_CalculateRiskConversionEvent();
 //alert(document.location);
- $.getJSON("http://www.mobiletest.mednl.com/assessment.php?jsoncallback=?&"+parameters, function(data){ 
+ $.getJSON("http://www.mobiletest.bqhost.in/assessment.php?jsoncallback=?&"+parameters, function(data){ 
 //alert(data);
 
 var abs1=data['abs1'];
