@@ -20,6 +20,9 @@ $('#donebtn').live("click",function()
 });
 });
 
+$(document).ready(function(e) {
+
+});
 </script>
 <body>
 <div id="locatecenter" data-role="page">
@@ -29,7 +32,7 @@ $('#donebtn').live("click",function()
         <!-- <div id="assesheadertext"> </div>-->
         <table id="wrapper">
           <tr>
-            <td> <!--<img src="findcentertext.png" />--> Find Centers</td>
+            <td><!--<img src="findcentertext.png" />--> Find Centers</td>
           </tr>
         </table>
       </div>
@@ -66,14 +69,12 @@ $('#donebtn').live("click",function()
       <option value="Goa">Goa</option>
       <option value="Mangalore">Mangalore</option>
     </select>
-    <div id="map" style="height:500px; width:90%; border: 1px solid #979797; margin:10px;"></div>
+    <div id="map" style="height:500px; width:90%; border: 1px solid #979797; margin:10px;display:none;"></div>
     <div id="searchwell"> </div>
-    
-<div class="clear"> </div>
-<footer id="footer"> </footer>
+    <div class="clear"> </div>
+    <footer id="footer"> </footer>
   </div>
 </div>
-
 </div>
 </body>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
@@ -442,6 +443,7 @@ $('#donebtn').live("click",function()
 					zoom:12,
 					mapTypeId: 'roadmap'
 				});
+				 
 						}
      // var query = "Mammography,"+document.getElementById("queryInput").value;
 	  var query = "mammography,India";
@@ -503,10 +505,12 @@ $('#donebtn').live("click",function()
     // Google AJAX Search API.
     function LocalResult(result) {
 		//alert('hi');
+
       var me = this;
       me.result_ = result;
       me.resultNode_ = me.node();
       me.marker_ = me.marker();
+ 
 //	  alert(me.resultNode_);
       google.maps.event.addDomListener(me.resultNode_, 'mouseover', function() {
         // Highlight the marker and result icon when the result is
@@ -525,9 +529,10 @@ $('#donebtn').live("click",function()
 	 // alert(me.resultNode_);
 	  
       document.getElementById("searchwell").appendChild(me.resultNode_);
+			   //var n = $( "div.unselected" ).length;
+//				 alert(n);
     }
- 
-   
+
    
    
    
@@ -535,6 +540,7 @@ $('#donebtn').live("click",function()
     LocalResult.prototype.node = function() {
       if (this.resultNode_) return this.resultNode_;
       return this.html();
+	  
     };
  
     // Returns the GMap marker for this result, creating it with the given
@@ -587,6 +593,7 @@ $('#donebtn').live("click",function()
       this.marker().setOptions({icon: highlight ? gRedIcon : gYellowIcon});
       this.node().className = "unselected" + (highlight ? " red" : "");
     }
+	
     //]]>
     </script>
 </html>
