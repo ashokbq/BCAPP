@@ -591,10 +591,11 @@ img.centered {
 }
 .unselected {
 	/*	background-color: #ECECED; 
-	margin-bottom: 40px;*/
+	margin-bottom: 40px;
+	height: 100px;*/
 	color: #333333;
 	float: left;
-	height: 100px;
+	
 	line-height: 1;
 	margin-right: 10px;
 	padding-bottom: 5px;
@@ -1077,4 +1078,9 @@ background: -o-linear-gradient(top, rgba(255,93,177,1) 0%,rgba(255,93,177,0.98) 
 background: -ms-linear-gradient(top, rgba(255,93,177,1) 0%,rgba(255,93,177,0.98) 19%,rgba(239,1,124,0.89) 100%) !important; /* IE10+ */
 background: linear-gradient(to bottom, rgba(255,93,177,1) 0%,rgba(255,93,177,0.98) 19%,rgba(239,1,124,0.89) 100%) !important; /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5db1', endColorstr='#e3ef017c',GradientType=0 )!important; /* IE6-8 */
+}
+
+/* center */
+#locatecenter .ui-btn-corner-all {
+    border-radius: 10px 10px 10px 10px !important;
 }
