@@ -51,18 +51,22 @@ $(document).ready(function(e) {
       <option value="Hyderabad">Hyderabad</option>
       <option value="Chennai">Chennai</option>
       <option value="Chandigarh">Chandigarh</option>
-      <option value="Kerala">Cochin</option>
+      <option value="Kochi">Cochin</option>
       <option value="Noida">Noida</option>
       <option value="Lucknow">Lucknow</option>
       <option value="Ahmedabad">Ahmedabad</option>
       <option value="Ghaziabad">Ghaziabad</option>
       <option value="Faridabad">Faridabad</option>
       <option value="Gurgaon">Gurgaon</option>
+      <option value="Bhopal">Bhopal</option>
+      <option value="Guwahati">Guwahati</option>
+      <option value="Bhubaneswar">Bhubaneswar/Cuttack </option>
       <option value="Pune">Pune</option>
       <option value="Nagpur">Nagpur</option>
       <option value="Patna">Patna</option>
       <option value="Ludhiana">Ludhiana</option>
-       <option value="Goa">Goa</option>
+      <option value="Jammu">Jammu</option>
+      <option value="Goa">Goa</option>
       <option value="Mangalore">Mangalore</option>
     </select>
     <div id="map" style="height:500px; width:90%; border: 1px solid #979797; margin:10px;display:none;"></div>
@@ -319,8 +323,28 @@ $(document).ready(function(e) {
 					mapTypeId: 'roadmap'
 				});
 						}
-						
-						
+							else if(val =='Bhopal')
+						{
+							lat=23.25993;
+							lon=77.41262;
+					//	alert('jaipur');
+						gMap = new google.maps.Map(document.getElementById("map"), {					
+					center: new google.maps.LatLng(lat, lon),
+					zoom:12,
+					mapTypeId: 'roadmap'
+				});
+						}
+							else if(val =='Guwahati')
+						{
+							lat=26.14713;
+							lon=91.73555;
+					//	alert('jaipur');
+						gMap = new google.maps.Map(document.getElementById("map"), {					
+					center: new google.maps.LatLng(lat, lon),
+					zoom:12,
+					mapTypeId: 'roadmap'
+				});
+						}
 							else if(val =='Pune')
 						{
 							lat=18.52043;
@@ -356,8 +380,8 @@ $(document).ready(function(e) {
 						}
 							else if(val =='Ludhiana')
 						{
-							lat=30.90096;
-							lon=75.85728;
+							lat=30.9009650;
+							lon=75.8572758;
 					//	alert('jaipur');
 						gMap = new google.maps.Map(document.getElementById("map"), {					
 					center: new google.maps.LatLng(lat, lon),
@@ -365,7 +389,17 @@ $(document).ready(function(e) {
 					mapTypeId: 'roadmap'
 				});
 						}
-						
+							else if(val =='Jammu')
+						{
+							lat=32.72660;
+							lon=74.85703;
+					//	alert('jaipur');
+						gMap = new google.maps.Map(document.getElementById("map"), {					
+					center: new google.maps.LatLng(lat, lon),
+					zoom:12,
+					mapTypeId: 'roadmap'
+				});
+						}
 							else if(val =='Goa')
 						{
 							lat=15.29933;
@@ -399,9 +433,20 @@ $(document).ready(function(e) {
 					mapTypeId: 'roadmap'
 				});
 						}
-						
-     // var query = "Mammography,"+document.getElementById("queryInput").value;
-	  var query = "mammography,India";
+							else if(val =='Bhubaneswar')
+						{
+							lat=20.29606;
+							lon=85.82454;
+					//	alert('jaipur');
+						gMap = new google.maps.Map(document.getElementById("map"), {					
+					center: new google.maps.LatLng(lat, lon),
+					zoom:12,
+					mapTypeId: 'roadmap'
+				});
+				 
+						}
+      var query = "radiology,"+document.getElementById("queryInput").value+",india";
+	 // var query = "radiology";
       gLocalSearch.setCenterPoint(val);
       gLocalSearch.execute(query);
 	  			//	alert(gLocalSearch.length);
