@@ -1,5 +1,5 @@
 // JScript File
-servlet = "http://www.mobiletest.bqhost.in/assessment.php";
+servlet = "http://www.mobiletest.mednl.com/assessment.php";
 _error_msg_history = "This tool cannot calculate breast cancer risk accurately for women with a medical history of any breast cancer or of DCIS or LCIS.";
 _error_msg_current_age = "This tool only calculates risk for women 35 years of age or older.";
 _error_msg_hist_age = "This tool cannot calculate breast cancer risk accurately for women with a medical history of breast cancer or of DCIS or LCIS. In addition, the tool only calculates risk for women 35 years of age or older.";
@@ -179,7 +179,7 @@ var selectedsubrace = subraceval.options[subraceval.selectedIndex].text;
   // will be needed in this file.  
   if(window.Analytics_CalculateRiskConversionEvent)
     window.Analytics_CalculateRiskConversionEvent();
- $.getJSON("http://www.mobiletest.bqhost.in/assessment.php?jsoncallback=?&current_age="+current_age+"&age_at_menarche="+age_at_menarche+"&age_at_first_live_birth="+age_at_first_live_birth+"&ever_had_biopsy="+ever_had_biopsy+"&previous_biopsies="+previous_biopsies+"&biopsy_with_hyperplasia="+biopsy_with_hyperplasia+"&related_with_breast_cancer="+related_with_breast_cancer+"&race="+race+"&asian="+asian+"&userid="+userid, function(data){ 
+ $.getJSON("http://www.mobiletest.mednl.com/assessment.php?jsoncallback=?&current_age="+current_age+"&age_at_menarche="+age_at_menarche+"&age_at_first_live_birth="+age_at_first_live_birth+"&ever_had_biopsy="+ever_had_biopsy+"&previous_biopsies="+previous_biopsies+"&biopsy_with_hyperplasia="+biopsy_with_hyperplasia+"&related_with_breast_cancer="+related_with_breast_cancer+"&race="+race+"&asian="+asian+"&userid="+userid, function(data){ 
 
 
 var abs1=data['abs1'];
